@@ -35,7 +35,7 @@ public class Tarea implements Serializable {
     
     
     
-    @JoinColumn(name = "usuario", referencedColumnName = "usuario")
+    @JoinColumn(name = "idusuario", referencedColumnName = "idusuario")
     @ManyToOne
     private Usuario usuario;
 
