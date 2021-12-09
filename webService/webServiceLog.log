@@ -1,0 +1,257 @@
+[07/12/2021 23:30:13] [INFO] proceso iniciado
+[07/12/2021 23:30:29] [INFO] Llamado a la lista de usuarios
+[08/12/2021 00:24:06] [INFO] proceso iniciado
+[08/12/2021 00:25:58] [INFO] proceso iniciado
+[08/12/2021 00:27:55] [INFO] proceso iniciado
+[08/12/2021 01:00:31] [INFO] proceso iniciado
+[08/12/2021 01:06:21] [INFO] proceso iniciado
+[08/12/2021 01:08:42] [INFO] proceso iniciado
+[08/12/2021 01:19:55] [INFO] proceso iniciado
+[08/12/2021 01:20:07] [INFO] Llamado a la lista de usuarios
+[08/12/2021 01:58:17] [INFO] proceso iniciado
+[08/12/2021 01:58:28] [ERROR] java.lang.NullPointerException
+[08/12/2021 01:58:28] [INFO] Se presentó un error al tratar de registrar el usuario {"usuario":{"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 01:59:12] [INFO] proceso iniciado
+[08/12/2021 01:59:19] [ERROR] java.lang.NullPointerException
+[08/12/2021 01:59:19] [INFO] Se presentó un error al tratar de registrar el usuario {"usuario":{"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 02:02:08] [ERROR] java.lang.IllegalArgumentException: contains illegal character for hexBinary: [A82A34DF35E02E5CAF0C64124FB358FB5335AFB342DD0ED0E0BB32F31533B034C475A94FF15B46639BCE4BACF9661DA5DDBCEFE150E0841095F0F127F16D6D3FDAE6BC9E3554E4C2E3645EB58F79EDC1FAA1E30D0E871BB7D268148287CE8F7FA51E8BB9BD676E08D24745621C93BC9CAA774EEC35CA0CEC782C32961D4D00A6]
+[08/12/2021 02:02:09] [INFO] Registro  de usuario ok {"usuario":{"idusuario":11,"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 02:03:47] [INFO] proceso iniciado
+[08/12/2021 02:04:03] [ERROR] java.lang.IllegalArgumentException: contains illegal character for hexBinary: [A82A34DF35E02E5CAF0C64124FB358FB5335AFB342DD0ED0E0BB32F31533B034C475A94FF15B46639BCE4BACF9661DA5DDBCEFE150E0841095F0F127F16D6D3FDAE6BC9E3554E4C2E3645EB58F79EDC1FAA1E30D0E871BB7D268148287CE8F7FA51E8BB9BD676E08D24745621C93BC9CAA774EEC35CA0CEC782C32961D4D00A6]
+[08/12/2021 02:04:03] [INFO] Registro  de usuario ok {"usuario":{"idusuario":12,"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 02:05:31] [INFO] proceso iniciado
+[08/12/2021 02:05:50] [ERROR] java.lang.IllegalArgumentException: contains illegal character for hexBinary: [A82A34DF35E02E5CAF0C64124FB358FB5335AFB342DD0ED0E0BB32F31533B034C475A94FF15B46639BCE4BACF9661DA5DDBCEFE150E0841095F0F127F16D6D3FDAE6BC9E3554E4C2E3645EB58F79EDC1FAA1E30D0E871BB7D268148287CE8F7FA51E8BB9BD676E08D24745621C93BC9CAA774EEC35CA0CEC782C32961D4D00A6]
+[08/12/2021 02:05:50] [INFO] Registro  de usuario ok {"usuario":{"idusuario":13,"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 02:08:15] [INFO] proceso iniciado
+[08/12/2021 02:08:32] [ERROR] java.lang.IllegalArgumentException: contains illegal character for hexBinary: [A82A34DF35E02E5CAF0C64124FB358FB5335AFB342DD0ED0E0BB32F31533B034C475A94FF15B46639BCE4BACF9661DA5DDBCEFE150E0841095F0F127F16D6D3FDAE6BC9E3554E4C2E3645EB58F79EDC1FAA1E30D0E871BB7D268148287CE8F7FA51E8BB9BD676E08D24745621C93BC9CAA774EEC35CA0CEC782C32961D4D00A6]
+[08/12/2021 02:08:33] [INFO] Registro  de usuario ok {"usuario":{"idusuario":14,"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 02:11:05] [INFO] proceso iniciado
+[08/12/2021 02:11:14] [ERROR] java.lang.IllegalArgumentException: contains illegal character for hexBinary: [A82A34DF35E02E5CAF0C64124FB358FB5335AFB342DD0ED0E0BB32F31533B034C475A94FF15B46639BCE4BACF9661DA5DDBCEFE150E0841095F0F127F16D6D3FDAE6BC9E3554E4C2E3645EB58F79EDC1FAA1E30D0E871BB7D268148287CE8F7FA51E8BB9BD676E08D24745621C93BC9CAA774EEC35CA0CEC782C32961D4D00A6]
+[08/12/2021 02:11:14] [INFO] Registro  de usuario ok {"usuario":{"idusuario":15,"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 02:12:31] [INFO] proceso iniciado
+[08/12/2021 02:12:40] [INFO] Registro  de usuario ok {"usuario":{"idusuario":16,"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 02:13:38] [INFO] Registro  de usuario ok {"usuario":{"idusuario":17,"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 02:31:27] [INFO] proceso iniciado
+[08/12/2021 02:31:37] [INFO] Registro  de usuario ok {"usuario":{"idusuario":18,"usuario":"mariolondonogarzonq¿@gmail.com","password":"321"}}
+[08/12/2021 02:31:54] [INFO] Registro  de usuario ok {"usuario":{"idusuario":19,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 02:32:01] [INFO] Registro  de usuario ok {"usuario":{"idusuario":20,"usuario":"mariolondonogarzonq1@gmail.com","password":"321"}}
+[08/12/2021 02:32:17] [INFO] Registro  de usuario ok {"usuario":{"idusuario":21,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 02:41:21] [INFO] proceso iniciado
+[08/12/2021 03:03:50] [INFO] proceso iniciado
+[08/12/2021 03:04:07] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:04:52] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:05:43] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:06:55] [INFO] proceso iniciado
+[08/12/2021 03:07:04] [INFO] Registro  de usuario ok {"usuario":{"idusuario":22,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:07:17] [INFO] Registro  de usuario ok {"usuario":{"idusuario":23,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:07:29] [INFO] Registro  de usuario ok {"usuario":{"idusuario":24,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:07:52] [INFO] proceso iniciado
+[08/12/2021 03:08:26] [INFO] proceso iniciado
+[08/12/2021 03:08:34] [INFO] Registro  de usuario ok {"usuario":{"idusuario":25,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:08:41] [INFO] Registro  de usuario ok {"usuario":{"idusuario":26,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:08:46] [INFO] Registro  de usuario ok {"usuario":{"idusuario":27,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:08:48] [INFO] Registro  de usuario ok {"usuario":{"idusuario":28,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:08:51] [INFO] Registro  de usuario ok {"usuario":{"idusuario":29,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:09:32] [INFO] proceso iniciado
+[08/12/2021 03:09:40] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:10:07] [INFO] Registro  de usuario ok {"usuario":{"idusuario":30,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:10:10] [INFO] Registro  de usuario ok {"usuario":{"idusuario":31,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:10:13] [INFO] Registro  de usuario ok {"usuario":{"idusuario":32,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:10:16] [INFO] Registro  de usuario ok {"usuario":{"idusuario":33,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:10:19] [INFO] Registro  de usuario ok {"usuario":{"idusuario":34,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:10:21] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:20:39] [INFO] proceso iniciado
+[08/12/2021 03:20:48] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:21:08] [INFO] Registro  de usuario ok {"usuario":{"idusuario":35,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:21:11] [INFO] Este usuario ya se encuentra registrado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:21:32] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:21:54] [INFO] Registro  de usuario ok {"usuario":{"idusuario":36,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:21:56] [INFO] Este usuario ya se encuentra registrado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:22:11] [INFO] Este usuario ya se encuentra registrado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 03:22:13] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 09:51:04] [INFO] proceso iniciado
+[08/12/2021 09:53:22] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 09:53:55] [ERROR] org.springframework.orm.jpa.JpaSystemException: could not execute statement; nested exception is org.hibernate.exception.GenericJDBCException: could not execute statement
+[08/12/2021 09:53:55] [INFO] Se presentó un error al tratar de registrar el usuario {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 09:57:50] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 09:58:06] [INFO] Registro  de usuario ok {"usuario":{"idusuario":38,"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 09:58:30] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 09:59:17] [INFO] Los datos de registro no concuerdan {"usuario":{"usuario":"mariolondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 10:00:11] [INFO] proceso iniciado
+[08/12/2021 10:00:19] [INFO] Los datos de registro no concuerdan {"usuario":{"usuario":"saralondonogarzonq@gmail.com","password":"321"}}
+[08/12/2021 10:00:35] [INFO] Registro  de usuario ok {"usuario":{"idusuario":39,"usuario":"saralondonogarzonq@gmail.com","password":"54321"}}
+[08/12/2021 10:13:28] [INFO] proceso iniciado
+[08/12/2021 10:14:40] [INFO] proceso iniciado
+[08/12/2021 10:14:54] [INFO] Este usuario ya se encuentra registrado {"usuario":{"usuario":"saralondonogarzonq@gmail.com","password":"54321"}}
+[08/12/2021 10:15:40] [INFO] Registro  de usuario ok {"usuario":{"idusuario":40,"usuario":"santolondonogarzonq@gmail.com","password":"santo123"}}
+[08/12/2021 10:27:03] [INFO] proceso iniciado
+[08/12/2021 10:30:01] [INFO] proceso iniciado
+[08/12/2021 10:35:52] [INFO] Registro  de usuario ok {"usuario":{"idusuario":41,"usuario":"otro_usuario_garzonq@gmail.com","password":"santo123"}}
+[08/12/2021 10:36:23] [INFO] proceso iniciado
+[08/12/2021 10:36:35] [ERROR] java.lang.IllegalArgumentException: contains illegal character for hexBinary: santo123
+[08/12/2021 10:36:35] [INFO] Los datos de registro no concuerdan {"usuario":{"usuario":"otro_usuario_garzonq@gmail.com","password":"santo123"}}
+[08/12/2021 10:37:34] [ERROR] java.lang.IllegalArgumentException: contains illegal character for hexBinary: santo123
+[08/12/2021 10:37:34] [INFO] Los datos de registro no concuerdan {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"santo123"}}
+[08/12/2021 10:39:09] [INFO] Registro  de usuario ok {"usuario":{"idusuario":42,"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 10:39:27] [INFO] Este usuario ya se encuentra registrado {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 11:12:21] [INFO] proceso iniciado
+[08/12/2021 11:13:33] [INFO] proceso iniciado
+[08/12/2021 11:13:41] [INFO] Llamado a la lista de roles
+[08/12/2021 11:15:10] [INFO] proceso iniciado
+[08/12/2021 11:15:23] [INFO] Llamado a la lista de roles
+[08/12/2021 11:15:37] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:22:55] [INFO] proceso iniciado
+[08/12/2021 11:24:06] [INFO] proceso iniciado
+[08/12/2021 11:25:35] [INFO] proceso iniciado
+[08/12/2021 11:26:28] [INFO] proceso iniciado
+[08/12/2021 11:26:38] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:26:54] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:27:54] [INFO] proceso iniciado
+[08/12/2021 11:28:17] [INFO] proceso iniciado
+[08/12/2021 11:28:26] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:29:03] [INFO] Llamado a la lista de roles
+[08/12/2021 11:31:32] [INFO] proceso iniciado
+[08/12/2021 11:31:40] [INFO] Llamado a la lista de roles
+[08/12/2021 11:32:18] [INFO] proceso iniciado
+[08/12/2021 11:32:27] [INFO] Llamado a la lista de roles
+[08/12/2021 11:32:29] [INFO] Llamado a la lista de roles
+[08/12/2021 11:32:31] [INFO] Llamado a la lista de roles
+[08/12/2021 11:32:32] [INFO] Llamado a la lista de roles
+[08/12/2021 11:32:33] [INFO] Llamado a la lista de roles
+[08/12/2021 11:32:58] [INFO] proceso iniciado
+[08/12/2021 11:33:27] [INFO] Llamado a la lista de roles
+[08/12/2021 11:34:34] [INFO] proceso iniciado
+[08/12/2021 11:34:43] [INFO] Llamado a la lista de roles
+[08/12/2021 11:34:49] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:36:21] [INFO] proceso iniciado
+[08/12/2021 11:37:43] [INFO] proceso iniciado
+[08/12/2021 11:38:20] [INFO] proceso iniciado
+[08/12/2021 11:38:29] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:39:01] [INFO] proceso iniciado
+[08/12/2021 11:39:12] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:40:01] [INFO] proceso iniciado
+[08/12/2021 11:40:08] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:41:42] [INFO] proceso iniciado
+[08/12/2021 11:41:51] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:43:15] [INFO] proceso iniciado
+[08/12/2021 11:44:52] [INFO] proceso iniciado
+[08/12/2021 11:45:46] [INFO] proceso iniciado
+[08/12/2021 11:45:54] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:46:36] [INFO] proceso iniciado
+[08/12/2021 11:47:10] [INFO] proceso iniciado
+[08/12/2021 11:47:20] [INFO] Llamado a la lista de usuarios
+[08/12/2021 11:52:08] [INFO] proceso iniciado
+[08/12/2021 11:54:04] [INFO] proceso iniciado
+[08/12/2021 11:54:14] [INFO] Llamado a la lista de usuarios
+[08/12/2021 14:58:59] [INFO] proceso iniciado
+[08/12/2021 14:59:17] [INFO] Llamado a la lista de usuarios
+[08/12/2021 15:04:27] [INFO] proceso iniciado
+[08/12/2021 15:08:12] [INFO] proceso iniciado
+[08/12/2021 15:08:20] [INFO] Llamado a la lista de usuarios
+[08/12/2021 15:12:42] [INFO] proceso iniciado
+[08/12/2021 15:12:52] [INFO] Llamado a la lista de usuarios
+[08/12/2021 15:14:42] [INFO] proceso iniciado
+[08/12/2021 15:14:50] [INFO] Llamado a la lista de usuarios
+[08/12/2021 15:16:25] [INFO] proceso iniciado
+[08/12/2021 15:16:34] [INFO] Llamado a la lista de usuarios
+[08/12/2021 15:17:54] [INFO] proceso iniciado
+[08/12/2021 15:18:03] [INFO] Llamado a la lista de usuarios
+[08/12/2021 15:20:22] [INFO] proceso iniciado
+[08/12/2021 15:20:42] [INFO] proceso iniciado
+[08/12/2021 15:21:51] [INFO] proceso iniciado
+[08/12/2021 15:22:23] [INFO] proceso iniciado
+[08/12/2021 15:22:50] [INFO] proceso iniciado
+[08/12/2021 15:25:09] [INFO] proceso iniciado
+[08/12/2021 15:25:18] [INFO] Llamado a la lista de usuarios
+[08/12/2021 15:30:32] [INFO] Llamado a la lista de roles
+[08/12/2021 15:30:43] [INFO] Buscar rol por id 1
+[08/12/2021 15:30:49] [INFO] Buscar rol por id 2
+[08/12/2021 15:30:56] [INFO] Llamado a la lista de roles
+[08/12/2021 15:53:28] [INFO] proceso iniciado
+[08/12/2021 15:53:41] [INFO] Llamado a la lista de estados
+[08/12/2021 15:56:21] [INFO] Llamado a la lista de estados
+[08/12/2021 15:59:08] [INFO] Buscar estado por id 1
+[08/12/2021 15:59:15] [INFO] Buscar estado por id 2
+[08/12/2021 15:59:20] [INFO] Buscar estado por id 3
+[08/12/2021 19:17:48] [INFO] proceso iniciado
+[08/12/2021 19:19:36] [INFO] proceso iniciado
+[08/12/2021 19:22:47] [INFO] proceso iniciado
+[08/12/2021 19:24:07] [INFO] proceso iniciado
+[08/12/2021 19:27:12] [INFO]  {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 19:29:29] [INFO] proceso iniciado
+[08/12/2021 19:30:13] [INFO] Login ok {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 19:30:24] [INFO] Los datos de ingreso no concuerdan {"usuario":{"usuario":"eotro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 19:30:32] [INFO] Login ok {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 19:30:40] [ERROR] javax.crypto.IllegalBlockSizeException: Input length must be multiple of 16 when decrypting with padded cipher
+[08/12/2021 19:30:40] [INFO] Los datos de ingreso no concuerdan {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125Acc"}}
+[08/12/2021 19:30:47] [INFO] Login ok {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 19:32:19] [INFO] proceso iniciado
+[08/12/2021 19:32:29] [INFO] Login ok {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 19:33:13] [INFO] proceso iniciado
+[08/12/2021 19:33:23] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 19:33:33] [INFO] Tiempo máximo de espera sobrepasado {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 19:33:48] [INFO] proceso iniciado
+[08/12/2021 19:34:28] [INFO] Login ok {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 19:37:29] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:37:59] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:39:35] [INFO] proceso iniciado
+[08/12/2021 19:39:43] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:43:27] [INFO] proceso iniciado
+[08/12/2021 19:43:36] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:43:41] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:44:37] [INFO] proceso iniciado
+[08/12/2021 19:45:03] [INFO] proceso iniciado
+[08/12/2021 19:45:11] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:45:47] [INFO] proceso iniciado
+[08/12/2021 19:45:56] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:48:49] [INFO] proceso iniciado
+[08/12/2021 19:48:57] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:50:31] [INFO] proceso iniciado
+[08/12/2021 19:52:08] [INFO] proceso iniciado
+[08/12/2021 19:52:16] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:53:21] [INFO] Llamado a la lista de usuarios
+[08/12/2021 19:53:47] [INFO] Buscar usuario por id 10
+[08/12/2021 19:53:53] [INFO] Buscar usuario por id 1
+[08/12/2021 19:54:52] [INFO] proceso iniciado
+[08/12/2021 19:55:01] [INFO] Buscar usuario por id 1
+[08/12/2021 19:58:05] [INFO] proceso iniciado
+[08/12/2021 19:58:14] [INFO] Buscar usuario por id 1
+[08/12/2021 20:05:54] [ERROR] javax.crypto.IllegalBlockSizeException: Input length must be multiple of 16 when decrypting with padded cipher
+[08/12/2021 20:05:54] [ERROR] java.lang.NullPointerException
+[08/12/2021 20:05:54] [INFO] Se presentó un error al tratar de registrar el usuario {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 20:06:11] [ERROR] javax.crypto.IllegalBlockSizeException: Input length must be multiple of 16 when decrypting with padded cipher
+[08/12/2021 20:06:11] [ERROR] java.lang.NullPointerException
+[08/12/2021 20:06:11] [INFO] Se presentó un error al tratar de registrar el usuario {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 20:09:29] [INFO] Registro  de usuario ok {"usuario":{"idusuario":43,"usuario":"SOPHOSSOLUTIONS@gmail.com","password":"..."}}
+[08/12/2021 20:09:36] [INFO] Este usuario ya se encuentra registrado {"usuario":{"usuario":"SOPHOSSOLUTIONS@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 20:11:30] [INFO] Llamado a la lista de roles
+[08/12/2021 20:11:45] [INFO] Buscar estado por id 3
+[08/12/2021 20:11:50] [INFO] Buscar estado por id 2
+[08/12/2021 20:12:04] [INFO] Buscar estado por id 2
+[08/12/2021 20:13:50] [ERROR] java.lang.IllegalArgumentException: hexBinary needs to be even-length: 123
+[08/12/2021 20:13:50] [ERROR] java.lang.NullPointerException
+[08/12/2021 20:13:50] [INFO] Se presentó un error al tratar de loguear el usuario {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 20:14:35] [INFO] Login ok {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 20:19:29] [INFO] proceso iniciado
+[08/12/2021 20:20:00] [INFO] proceso iniciado
+[08/12/2021 20:20:31] [INFO] proceso iniciado
+[08/12/2021 20:23:37] [INFO] proceso iniciado
+[08/12/2021 20:24:32] [INFO] proceso iniciado
+[08/12/2021 20:24:56] [INFO] proceso iniciado
+[08/12/2021 20:25:23] [INFO] proceso iniciado
+[08/12/2021 20:25:33] [INFO] Login ok {"usuario":{"usuario":"otro_usuario__2_garzonq@gmail.com","password":"49292684CA6A77398E35C7C738EC125A"}}
+[08/12/2021 20:27:17] [INFO] proceso iniciado
+[08/12/2021 20:29:29] [INFO] proceso iniciado
+[08/12/2021 20:30:16] [INFO] proceso iniciado
+[08/12/2021 20:31:18] [INFO] proceso iniciado
+[08/12/2021 20:32:20] [INFO] proceso iniciado
+[08/12/2021 20:33:00] [INFO] proceso iniciado
+[08/12/2021 20:34:27] [INFO] proceso iniciado
+[08/12/2021 20:36:50] [INFO] proceso iniciado
+[08/12/2021 20:37:48] [INFO] proceso iniciado
+[08/12/2021 20:38:09] [INFO] proceso iniciado
+[08/12/2021 20:39:18] [INFO] Llamado a la lista de estados
+[08/12/2021 20:39:44] [INFO] Llamado a la lista de estados
+[08/12/2021 20:40:41] [INFO] Llamado a la lista de estados
+[08/12/2021 20:44:07] [INFO] proceso iniciado
+[08/12/2021 20:45:53] [INFO] proceso iniciado
