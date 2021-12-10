@@ -1,27 +1,12 @@
-package com.sophos.ws.domain;
+package javaapplication3;
 
 import java.io.Serializable;
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
 
-@Entity
-@Table(name="comentariosportareas",catalog = "kanban", schema = "public")
+
 public class Comentariosportarea implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
-    @Column(nullable = false)
     private Long idcomentariosportarea;
-    @Column(length = 500)
     private String comentario;
     
     

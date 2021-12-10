@@ -2,8 +2,8 @@ package com.sophos.ws.impl;
 
 import com.sophos.ws.dao.ITareasDao;
 import com.sophos.ws.domain.Tarea;
-import com.sophos.ws.domain.Usuario;
 import com.sophos.ws.service.ITareaService;
+import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,13 +25,15 @@ public class TareaImpl implements ITareaService{
     }
 
     @Override
-    public List<Tarea> listaTareas(Usuario usuario) {
-        return itareasDao.findByUsuario(usuario);
+    public List<Tarea> listaTareas(Long idusuario) {
+        return itareasDao.findByIdusuario(idusuario);
     }
 
     @Override
-    public Tarea tareaPorId(Long idtarea) {
-        return itareasDao.findById(idtarea).orElse(null);
+    public List<Tarea> tareasPorId(Long idtarea) {
+        List<Long> listaId = new ArrayList<>();
+        listaId.add(idtarea);
+        return itareasDao.findAllById(listaId);
     }
 
     @Override
@@ -42,6 +44,11 @@ public class TareaImpl implements ITareaService{
     @Override
     public List<Tarea> tareaPorDescripcionYusuario(String descripcion, Long idusuario) {
         return itareasDao.tareaPorDescripcionYusuario(descripcion, idusuario);
+    }
+
+    @Override
+    public void editarTarea(Tarea tarea) {
+        itareasDao.save(tarea);
     }
     
 }

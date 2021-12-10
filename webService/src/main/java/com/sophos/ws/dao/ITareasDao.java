@@ -9,12 +9,11 @@ import org.springframework.data.repository.query.Param;
 
 public interface ITareasDao extends JpaRepository<Tarea,Long>{
     
-    @Query("SELECT t FROM Tarea t WHERE t.descripcion=:descripcion AND t.usuario.idusuario=:idusuario")
+    @Query("SELECT t FROM Tarea t WHERE t.descripcion=:descripcion AND t.idusuario=:idusuario")
     List<Tarea> tareaPorDescripcionYusuario(
             @Param("descripcion") String descripcion,
             @Param("idusuario")Long idusuario);
-    
-    
+        
      List<Tarea> findByDescripcionIgnoreCaseContaining(String descripcion);
-     List<Tarea> findByUsuario(Usuario usuario);
+     List<Tarea> findByIdusuario(Long idusuario);
 }

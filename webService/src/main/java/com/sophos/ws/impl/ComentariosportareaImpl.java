@@ -19,10 +19,10 @@ public class ComentariosportareaImpl implements IComentariosportareaService{
         return iComentariosportareasDao.save(comentario);
     }
 
-    @Override
+    /*@Override
     public List<Comentariosportarea> ComentariosPortarea(Tarea tarea) {
         return iComentariosportareasDao.ComentariosPortarea(tarea);
-    }
+    }*/
 
     @Override
     public Comentariosportarea editarComentario(Comentariosportarea comentario) {
@@ -32,6 +32,11 @@ public class ComentariosportareaImpl implements IComentariosportareaService{
     @Override
     public void eliminarComentario(Comentariosportarea comentario) {
         iComentariosportareasDao.delete(comentario);
+    }
+
+    @Override
+    public void eliminarComentarioPorTarea(Long idtarea) {
+        iComentariosportareasDao.eliminarComentariosPorTarea(idtarea);
     }
     
 }

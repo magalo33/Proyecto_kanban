@@ -15,8 +15,10 @@ import java.util.List;
  */
 public interface IComentariosportareaService {
     Comentariosportarea registrarComentario(Comentariosportarea comentario);
-    List<Comentariosportarea> ComentariosPortarea(Tarea tarea);    
+    //List<Comentariosportarea> ComentariosPortarea(Tarea tarea);    
     Comentariosportarea editarComentario(Comentariosportarea comentario);
     void eliminarComentario(Comentariosportarea comentario);
+    void eliminarComentarioPorTarea(Long idtarea);
+    
     
 }

@@ -10,6 +10,7 @@ import com.sophos.ws.dto.usuario.UsuarioResponseDto;
 import com.sophos.ws.impl.UsuarioImpl;
 import com.sophos.ws.utils.AESEncryption;
 import com.sophos.ws.utils.ConfiguracionUtilValues;
+import com.sophos.ws.utils.Propiedades;
 import com.sophos.ws.utils.Utils;
 import java.util.List;
 import javax.crypto.SecretKey;
@@ -30,6 +31,8 @@ public class UsuarioController {
 
     @Autowired
     private UsuarioImpl usuarioImpl;
+    @Autowired
+    private Propiedades propiedades;
 
     /*Metodo que retorna la lista completa de usuarios*/
     @GetMapping(value = "/usuario")
@@ -60,7 +63,7 @@ public class UsuarioController {
                     Utils.decryptText((headers.get("x-session-token")).get(0)),
                     UsuarioBaseDto.class);
             if (Utils.validarParametrosRegistroUsuario(usuarioBaseDto, usuarioRequest)) {
-                if (Utils.validarTiempoDeEspera(usuarioBaseDto.getExpdate())) {
+                if (Utils.validarTiempoDeEspera(usuarioBaseDto.getExpdate(),propiedades)) {
                     if (usuarioImpl.listarPorusuario(usuarioRequest.getUsuario().getUsuario()).size() == 0) {
                         usuario = usuarioImpl.registrarUsuario(usuarioRequest.getUsuario());
                         usuario.setPassword("...");
@@ -87,47 +90,23 @@ public class UsuarioController {
         return usuarioResponseDto;
     }
 
-    
     /*Valida login de un usuario*/
     @PostMapping(value = "/usuario/login")
     public @ResponseBody
-    UsuarioResponseDto validarLoginUsuario(
-            @RequestHeader MultiValueMap<String, String> headers,
+    UsuarioResponseDto validarLoginUsuario(@RequestHeader MultiValueMap<String, String> headers,
             @RequestBody UsuarioRequestDto usuarioRequest) {
-        int error = 1;
-        String descripcion = "";
-        Usuario usuario = null;
         Gson gson = new Gson();
         UsuarioResponseDto usuarioResponseDto = new UsuarioResponseDto();
+        usuarioResponseDto.setDescripcion("Se presentó un error técnico al tratar de validar el login");
+        usuarioResponseDto.setError(1);
+        usuarioResponseDto.setUsuario(null);
         try {
             UsuarioBaseDto usuarioBaseDto = gson.fromJson(
-                    Utils.decryptText((headers.get("x-session-token")).get(0)),
-                    UsuarioBaseDto.class);
-            if (Utils.validarParametrosRegistroUsuario(usuarioBaseDto, usuarioRequest)) {
-                if (Utils.validarTiempoDeEspera(usuarioBaseDto.getExpdate())) {
-                    List<Usuario> listaUsuarios = usuarioImpl.findByUsuarioAndPassword(usuarioRequest.getUsuario().getUsuario(), usuarioRequest.getUsuario().getPassword());
-                    if (listaUsuarios.size() == 0) {
-                        descripcion = "Se presentó un error al tratar de loguear el usuario. Verifique sus credenciales";
-                    } else {
-                        usuario = listaUsuarios.get(0);
-                        usuario.setPassword("...");
-                        error = 0;
-                        descripcion = "Login ok";
-                    }
-                } else {
-                    descripcion = "Tiempo máximo de espera sobrepasado";
-                }
-            } else {
-                descripcion = "Los datos de ingreso no concuerdan";
-            }
-
+                    Utils.decryptText((headers.get("x-session-token")).get(0)),UsuarioBaseDto.class);       
+            usuarioResponseDto = Utils.validarLogin(usuarioBaseDto,usuarioRequest,usuarioImpl,propiedades);      
         } catch (Exception e) {
             WsApplication.registrarErrorLog(e.toString());
-            descripcion = "Se presentó un error al tratar de loguear el usuario";
         }
-        usuarioResponseDto.setUsuario(usuario);
-        usuarioResponseDto.setError(error);
-        usuarioResponseDto.setDescripcion(descripcion);
         WsApplication.registrarInfoLog(usuarioResponseDto.getDescripcion().concat(" ").concat(new Gson().toJson(usuarioRequest)));
         return usuarioResponseDto;
     }
@@ -152,7 +131,7 @@ public class UsuarioController {
         String dataEncripted = "";
         UsuarioBaseDto usuarioResponse = new UsuarioBaseDto();
         usuarioResponse.setUsuarioRequest(usuarioRequest);
-        usuarioResponse.setExpdate(Utils.formatedDate());
+        usuarioResponse.setExpdate(Utils.formatedDate(propiedades));
         try {
             String keyText = ConfiguracionUtilValues.KEY;
             SecretKey secKey = AESEncryption.getSecretEncryptionKey(keyText);
