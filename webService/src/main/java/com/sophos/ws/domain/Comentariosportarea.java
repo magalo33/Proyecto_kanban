@@ -23,9 +23,23 @@ public class Comentariosportarea implements Serializable {
     private Long idcomentariosportarea;
     @Column(length = 500)
     private String comentario;
-    @JoinColumn(name = "idtarea", referencedColumnName = "idtarea")
+    
+    
+    /*@JoinColumn(name = "idtarea", referencedColumnName = "idtarea")
     @ManyToOne
-    private Tarea idtarea;
+    private Tarea idtarea;*/
+    
+    private Long idtarea;
+    public Long getIdtarea() {
+        return idtarea;
+    }
+
+    public void setIdtarea(Long idtarea) {
+        this.idtarea = idtarea;
+    }
+
+    
+    
 
     public Comentariosportarea() {
     }
@@ -50,14 +64,7 @@ public class Comentariosportarea implements Serializable {
         this.comentario = comentario;
     }
 
-    public Tarea getIdtarea() {
-        return idtarea;
-    }
-
-    public void setIdtarea(Tarea idtarea) {
-        this.idtarea = idtarea;
-    }
-
+   
     @Override
     public int hashCode() {
         int hash = 0;

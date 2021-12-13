@@ -16,7 +16,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name="tareas",catalog = "kanban", schema = "public")
+@Table(name = "tareas", catalog = "kanban", schema = "public")
 public class Tarea implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -31,16 +31,29 @@ public class Tarea implements Serializable {
     private List<Comentariosportarea> comentariosportareasList;
     @JoinColumn(name = "idestado", referencedColumnName = "idestado")
     @ManyToOne
-    private Estado idestado;
-    
-    
-    
-    @JoinColumn(name = "usuario", referencedColumnName = "usuario")
-    @ManyToOne
-    private Usuario usuario;
+    private Estado estado;
 
-    
-    
+    public Estado getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Estado estado) {
+        this.estado = estado;
+    }
+
+    /*@JoinColumn(name = "idusuario", referencedColumnName = "idusuario")
+    @ManyToOne
+    private Usuario usuario;*/
+    private Long idusuario;
+
+    public Long getIdusuario() {
+        return idusuario;
+    }
+
+    public void setIdusuario(Long idusuario) {
+        this.idusuario = idusuario;
+    }
+
     public Tarea() {
     }
 
@@ -72,22 +85,6 @@ public class Tarea implements Serializable {
         this.comentariosportareasList = comentariosportareasList;
     }
 
-    public Estado getIdestado() {
-        return idestado;
-    }
-
-    public void setIdestado(Estado idestado) {
-        this.idestado = idestado;
-    }
-
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
-
     @Override
     public int hashCode() {
         int hash = 0;
@@ -112,5 +109,5 @@ public class Tarea implements Serializable {
     public String toString() {
         return "entity.Tareas[ idtarea=" + idtarea + " ]";
     }
-    
+
 }

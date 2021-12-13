@@ -10,7 +10,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import lombok.Data;
 
 @Entity
 @Table(name="usuarios",catalog = "kanban", schema = "public")
@@ -26,13 +25,15 @@ public class Usuario implements Serializable {
     private String usuario;
     @Column(length = 100)
     private String password;
+    @Column(length = 200)
+    private String nombre;
     
     
     @OneToMany(mappedBy = "idusuario")
     private List<Usuarioxrol> usuarioxrolesList;
    
     
-    @OneToMany(mappedBy = "usuario")
+    @OneToMany(mappedBy = "idusuario")
     private List<Tarea> tareasList;
 
     public Usuario() {
@@ -80,6 +81,14 @@ public class Usuario implements Serializable {
 
     public void setTareasList(List<Tarea> tareasList) {
         this.tareasList = tareasList;
+    }
+    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     @Override

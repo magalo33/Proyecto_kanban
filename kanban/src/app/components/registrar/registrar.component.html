@@ -1,0 +1,27 @@
+<div class="container mt-5">
+    <div class="container-fluid">
+      <label class="titulo-superior">Formulario de registro</label>
+        <div class="form-group">
+          <label for="inputNombre" class="tit-formulario" >Nombre</label>
+          <input type="text" [(ngModel)]="nombre" class="form-control" id="inputNombre"  placeholder="Ingrese su nombre">
+        </div>
+
+        <div class="form-group">
+          <label for="campoEmail" class="tit-formulario" >Email address</label>
+          <input type="email"  [(ngModel)]="usuario" class="form-control" id="campoEmail" placeholder="Ingrese su email">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword1" class="tit-formulario">Password</label>
+          <input type="password" [(ngModel)]="password"  class="form-control" id="inputPassword1" placeholder="Ingrese el password">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword2" class="tit-formulario">Confirmación Password</label>
+          <input type="password" [(ngModel)]="confirmacionPassword" class="form-control" id="inputPassword2" placeholder="Confirme el password">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2 color-boton" (click)="registrar(usuario,nombre,password,confirmacionPassword)">Registrar</button>
+    </div>S
+</div>
+
+
+
+

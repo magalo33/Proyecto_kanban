@@ -1,0 +1,189 @@
+<div class="general mt-5">
+
+    <div class="fila">
+
+        <label class="titulo-superior">HOLA {{resourcesService.loggedUser.usuario.nombre}} .</label>
+
+        <div id='boton-agregar-tarea' class="mostrar">
+            <a href="javascript:void(0);"  (click)="registrarTarea()" > 
+                <i class="far fa-plus-square fa-1x">Agregar tarea</i>
+                    <!--<img src="./../../../assets/images/agregar_tarea.svg" alt="avanzar" class="imagen-agregar">-->
+            </a>
+        </div>
+        
+    </div>   
+
+    <div id='div-agregar-tarea' class="ocultar">
+        <label class="tit-formulario">AGREGAR TAREA</label>
+            <div class="form-group">
+              <label for="formGroupExampleInput" class="tit-formulario"> Nombre de la tarea</label>
+              <input type="text" class="form-control" id="txt-nombre-tarea" 
+              [(ngModel)]="tarea.descripcion"
+              placeholder="Ingrese un nombre de (máximo) 25 caracteres" maxlength="25">
+            </div>
+
+            <div class="form-group mt-2">
+                <div class="fila-imagenes">
+                    <label for="txt-descripcion-tarea">Comentario de la tarea</label>
+
+                    <input type="text" class="form-control" 
+                    [(ngModel)]="comentarioRequest.comentario"  
+                    [ngModelOptions]="{standalone: true}"
+                    id="txt-descripcion-tarea" placeholder="Ingrese una descripcion de (máximo) 100 caracteres"
+                     maxlength="100">&nbsp; &nbsp;
+
+                    <a href="javascript:void(0);"  (click)="aceptarRegistroTarea()" >                         
+                        <i class="far fa-save fa-3x"></i><!--<img src="./../../../assets/images/aceptar.svg" alt="aceptar" class="imagen-guardar">-->
+                    </a>
+
+                    <a href="javascript:void(0);"  (click)="cancelarRegistroTarea()" > 
+                        <img src="./../../../assets/images/cancelar.svg" alt="cancelar" class="imagen-guardar">
+                    </a>
+
+                </div> 
+        
+            </div>
+    </div>
+
+<div class="text-center mt-5">
+
+    <div class="wrapper mb-1">
+       
+        <div class="titulo-iniciar tit_formulario">
+            <label  >POR INICIAR</label>            
+        </div>
+
+        <div class="titulo-enproceso tit_formulario">
+            <label  >EN PROCESO</label>            
+        </div>
+
+        <div class="titulo-hecho tit_formulario">
+            <label  >HECHO</label>            
+        </div>
+
+    </div>
+
+    <div *ngFor="let tarea of resourcesService.loggedUser.usuario.tareasList" class="wrapper">
+        <div >
+
+            <div class="item-tarea col-12 "  *ngIf="tarea.estado.idestado==1" class="iniciar">
+                <div class="col-1 col-xs-1  images-accion">
+                    <a href="javascript:void(0);"  (click)="abrirModalEliminarTarea(tarea)"> 
+                        <i class="far fa-trash-alt"></i><!--<img src="./../../../assets/images/borrar.svg" alt="borrar" class="imagen-accion">-->
+                    </a>    
+                </div>
+                <label  class="col-9 txt-nombre-tarea">
+                    <a href="javascript:void(0);"  (click)="editarTarea(tarea)"> 
+                        {{tarea.descripcion}} 
+                    </a>                                   
+                </label>  
+                <div class="col-2 col-xs-2  images-accion">
+                    <a href="javascript:void(0);"  (click)="avanzarTarea(tarea)" > 
+                        <i class="fas fa-chevron-right rojo"></i>
+                        <!--<img src="./../../../assets/images/avanzar.svg" alt="avanzar" class="imagen-accion">-->
+                    </a>
+                </div>    
+            </div>  
+        </div>
+
+        <div>
+            <div class="item-tarea col-12 "  *ngIf="tarea.estado.idestado==2" class="enproceso">
+               
+                <div class="col-1 col-xs-1  images-accion">
+                    <a href="javascript:void(0);"  (click)="retrocederTarea(tarea)" > 
+                        <i class="fas fa-chevron-left rojo"></i>
+                        <!--<img src="./../../../assets/images/retroceder.svg" alt="retroceder" class="imagen-accion">-->
+                    </a>
+                </div>
+                <label  class="col-8  txt-nombre-tarea">
+                    <a href="javascript:void(0);"  (click)="editarTarea(tarea)"> {{tarea.descripcion}} 
+                    </a>            
+                </label>  
+                <div class="col-2 col-xs-2  images-accion">
+                    <a href="javascript:void(0);"  (click)="avanzarTarea(tarea)" > 
+                        <i class="fas fa-chevron-right rojo"></i>
+                        <!--<img src="./../../../assets/images/avanzar.svg" alt="avanzar" class="imagen-accion">-->
+                    </a>
+                </div>    
+            </div>     
+        </div>
+
+        <div >
+            <div class="item-tarea col-12 "  *ngIf="tarea.estado.idestado==3" class="hecho">
+               
+                <div class="col-2 col-xs-2  images-accion">
+                    <a href="javascript:void(0);"  (click)="retrocederTarea(tarea)" > 
+                        <i class="fas fa-chevron-left rojo"></i>
+                        <!--<img src="./../../../assets/images/retroceder.svg" alt="retroceder" class="imagen-accion">-->
+                    </a>
+                    
+                </div>
+                <label  class="col-8  txt-nombre-tarea">
+                    <a href="javascript:void(0);"  (click)="editarTarea(tarea)"> {{tarea.descripcion}} 
+                    </a>            
+                </label>    
+            </div>     
+            
+        </div>
+
+    </div>
+
+</div>
+<br/><br/><br/>
+
+</div>
+
+<div id="modaleditartarea" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">                    
+            <div class="modal-header centrado w-100pct">
+                <div id="div_modal_modaleditartarea" class="w-100pct">EDITAR COMENTARIO</div>                
+            </div>              
+            <div class=" body-modal centrado margen-div-modal">
+                <div class="form-group margen-div-modal">
+                    <label for="id-gps-input">Comentario</label>
+                    <textarea disabled="true" type="text" class="form-control" id="id-comentario-input" name="id-comentario-input" rows="5"></textarea>
+                </div>    
+                <br/>                                    
+                <div class="form-group margen-div-modal">
+                    <label for="id-gps-input">Nuevo Comentario</label>
+                    <textarea type="text" class="form-control" id="id-nuevo-comentario-input" name="id-nuevo-comentario-input" rows="5"></textarea>
+                </div>     
+                <div class="form-group margen-div-modal mt-1">
+                    <label for="id-password-Input">Password</label>
+                    <input type="password" class="form-control" id="id-password-comentario"
+                     autocomplete="off" name="password" placeholder="Ingrese su password">
+                </div>                                        
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"  (click)="closeModal()">CANCELAR</button>
+                    <button class="btn btn-primary w30pct" type="submit" (click)="aceptarEditarTarea()">EDITAR</button> 
+                </div>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>  
+
+<div id="modaleliminartarea" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">                    
+            <div class="modal-header centrado w-100pct">
+                <div id="div_modal_modaleditartarea" class="w-100pct">ELIMINAR COMENTARIO</div>                
+            </div>              
+            <div class=" body-modal centrado margen-div-modal">
+                <br/>                                         
+                <div class="form-group margen-div-modal mt-1">
+                    <label for="id-eliminar-password-Input">Debe ingresar el password</label>
+                    <input type="password" class="form-control mt-2" id="id-eliminar-password-Input"
+                     autocomplete="off" name="password" placeholder="Ingrese su password">
+                </div>                                        
+                <div class="modal-footer ">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"  (click)="closeModal()">CANCELAR</button>
+                    <button class="btn btn-primary w30pct" type="submit" (click)="aceptarEliminarTarea()">EDITAR</button> 
+                </div>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>  
+

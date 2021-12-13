@@ -1,0 +1,34 @@
+<br/>
+<br/>
+<br/>
+<div class="container mt-5">
+    <div class="container justify-content-center">
+        <div class="form-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-container">
+                            <div class="form-horizontal">
+                                <h3 class="title">Login Kanban</h3>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder=" Username"  [(ngModel)]="usuarioLogin">                                     
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" placeholder=" Password" [(ngModel)]="contrasenia">
+                                </div>
+                                <button (click)="login(usuarioLogin,contrasenia)"      type="submit" value="Ingresar" class="btn btn-primary color-boton">Ingresar</button>
+                                <span class="register">
+                                    <a href="javascript:void(0);" (click)="registarUsuario()">Registrese aqui</a>                                    
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+                              

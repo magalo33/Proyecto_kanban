@@ -1,0 +1,208 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  .titulo-iniciar{
+      background-color: rgb(255, 160, 105);
+      border-radius: 6px;
+      border-width: 10px;
+      border-color: rgb(22, 15, 11);
+  }
+
+  
+  .titulo-enproceso{
+    background-color: rgb(105, 150, 255);
+    border-radius: 6px;
+    border-width: 10px;
+}
+
+
+.titulo-hecho{
+    background-color: rgb(105, 255, 235);
+    border-radius: 6px;
+    border-width: 10px;
+}
+
+
+.iniciar{
+    background-color: rgb(255, 160, 105);
+    border-radius: 6px;
+    border-width: 10px;
+    position: relative;
+    display: flex;
+}
+
+
+.enproceso{
+  background-color: rgb(105, 150, 255);
+  border-radius: 6px;
+  border-width: 10px;
+  display: flex;
+}
+
+
+.hecho{
+  background-color: rgb(105, 255, 235);
+  border-radius: 6px;
+  border-width: 10px;
+  border-color: rosybrown;
+  display: flex;
+}
+
+
+.imagen-accion{
+    vertical-align: middle;
+    margin-left: 2px;
+    width: 1em;    
+}
+
+.imagen-agregar{
+    vertical-align: middle;
+    margin-left: 2px;
+    width: 2em;    
+}
+
+.txt-tarea{
+    margin: auto;
+    vertical-align: middle;
+    float: left;
+    font-size: 1em;
+}
+
+.item-tarea{
+    display:flex;
+    vertical-align: middle;
+}
+
+.images-accion{
+    margin: auto;
+    vertical-align: middle;
+}
+
+.sin-contenido{
+    background-color: white;
+}
+
+.general{
+    margin: 20px;
+}
+
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: rgb(8, 1, 1);
+  }
+  
+  a:hover {
+    color: hsla(236, 93%, 28%, 0.787);
+    font-size: 1.2em;
+  }
+
+  .fs08em{
+    font-size: 0.8em;
+  }
+
+  .fila-imagenes{
+      display: flex;
+  }
+  .imagen-guardar{
+      margin-left: 10px;
+    width: 3em;
+  }
+
+  .ocultar{
+    display: none;
+  }
+
+  .mostrar{
+      display: block;
+  }
+
+
+
+
+  .centrado{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.w-100pct{
+  width: 100%;
+}
+
+.body-modal{
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: 'Roboto-Thin', sans-serif;
+  color: #23233c;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 100%;    
+}
+
+.margen-div-modal{
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.txt-nombre-tarea{
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 100%;
+  color: #23233c;
+}
+
+@media (max-width: 300px) {
+  .imagen-accion{
+    vertical-align: middle;
+    margin-left: 2px;
+    width: 0.6em;  
+  }
+    
+    .iniciar{
+      background-color: rgb(255, 160, 105);
+      border-radius: 6px;
+      border-width: 10px;
+      position: relative;
+      display: flex;
+      width: 120%;
+      z-index: 10;
+  }
+  
+  
+  .enproceso{
+    
+    background-color: rgb(105, 150, 255);
+    border-radius: 6px;
+    border-width: 10px;
+    display: flex;
+    width: 150%;
+    }
+  
+  
+  .hecho{
+    background-color: rgb(105, 255, 235);
+    border-radius: 6px;
+    border-width: 10px;
+    border-color: rosybrown;
+    display: flex;
+  }
+
+  .txt-nombre-tarea{
+    font-size: 0.5em;
+    font-weight: 600;
+    line-height: 100%;
+    color: #23233c;
+  }
+
+}
+

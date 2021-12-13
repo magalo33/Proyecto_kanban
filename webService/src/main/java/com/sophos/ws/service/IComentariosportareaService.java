@@ -6,8 +6,6 @@
 package com.sophos.ws.service;
 
 import com.sophos.ws.domain.Comentariosportarea;
-import com.sophos.ws.domain.Tarea;
-import java.util.List;
 
 /**
  *
@@ -15,8 +13,7 @@ import java.util.List;
  */
 public interface IComentariosportareaService {
     Comentariosportarea registrarComentario(Comentariosportarea comentario);
-    List<Comentariosportarea> ComentariosPortarea(Tarea tarea);    
     Comentariosportarea editarComentario(Comentariosportarea comentario);
     void eliminarComentario(Comentariosportarea comentario);
-    
+    void eliminarComentarioPorTarea(Long idtarea);   
 }
